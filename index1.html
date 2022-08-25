@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style1.css">
+    <link rel="icon" href="./imgs/icon.png">
+    <title>Your Cart</title>
+</head>
+<!-- Products Page -->
+<body>
+    <div id="navbar">
+        <div id="leftside">
+            <img id="navimg" src="./imgs/icon.png" alt="">
+            <h1>Your Cart</h1>
+        </div>
+
+        <div id="rightside">
+            <a class="navA" href="#Products">Products</a>
+            <a class="navA" href="./index.html">About Us</a>
+            <a class="navA" href="./index.html">Contact Us</a>
+        </div>
+    </div>
+
+    <div id="Products">
+        <input  id="search" type="text"
+        placeholder="Search" >
+        
+        <h1 class="titles">Products</h1>
+
+        <div class="container">
+            <div class="box" id="item1">
+               <img class="img" src="./imgs/p1.png" alt="">
+               <h2 class="name" id="title1">Hand Bag</h2>
+               <h4 class="name" class="price">Price : 35.000 KD</h4>
+               <button class="button" onclick="addToCart(item1),totalCost(),total();">Add To Cart</button>
+            </div>
+
+            <div class="box" id="item2">
+                <img class="img" src="./imgs/p2.png" alt="">
+                <h2 class="name" id="title2">Sun Glases</h2>
+                <h4 class="name" class="price">Price : 26.000 KD</h4>
+                <button class="button" onclick="addToCart(item2),totalCost(),total();">Add To Cart</button>
+             </div>
+
+             <div class="box" id="item3">
+                <img class="img" src="./imgs/p3.png" alt="">
+                <h2 class="name" id="title3">Labtop</h2>
+                <h4 class="name" class="price">Price : 135.000 KD</h4>
+                <button class="button" onclick="addToCart(item3),totalCost(),total();">Add To Cart</button>
+             </div>
+           
+             <div class="box" id="item4">
+                <img class="img" src="./imgs/p4.png" alt="">
+                <h2 class="name" id="title4">Apple Watch</h2>
+                <h4 class="name" class="price">Price : 140.000 KD</h4>
+                <button class="button" onclick="addToCart(item4),totalCost(),total();">Add To Cart</button>
+             </div>
+
+             <div class="box" id="item5">
+                <img class="img" src="./imgs/p5.png" alt="">
+                <h2 class="name" id="title5">Samsung Mobile </h2>
+                <h4 class="name" class="price">Price : 235.000 KD</h4>
+                <button class="button" onclick="addToCart(item5) ,totalCost(),total();">Add To Cart</button>
+             </div>
+        </div>
+    </div>
+
+    <div id="cart">
+        <h1 class="titles">Cart <span>0</span></h1>
+        <div id="Cart">
+
+        </div>
+    </div>
+
+    <div class="total">
+    <hr id="hr">
+    <h1 class="titles" id="H1">Total</h1>
+
+    <button id="totalButton" onclick="total(),anim()">Click The Button To get Total</button>
+   
+        <h2 id="showtotal"></h2>
+    
+    </div>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
+
